@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="ndtv.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="ndtv.Weather">
+        <methods>
+          <include name="naviagteWeatherPage"/>
+          <include name="teardown"/>
+          <include name="basePageNavigation" invocation-numbers="0 1 2 3 4"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- ndtv.Weather -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
